@@ -1,0 +1,34 @@
+{
+  "name": "marafon",
+  "version": "1.0.0",
+  "description": "https://www.figma.com/file/2IWe9UdTsEiVnfnAsS8wM3/%D0%9C%D0%B0%D1%80%D0%B0%D1%84%D0%BE%D0%BD-3.0-(Copy)",
+  "main": "index.js",
+  "dependencies": {
+    "express": "^4.17.1"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "editorconfig": "editorconfig-cli",
+    "test": "npm run editorconfig",
+    "build": "gulp styles",
+    "start": "gulp"
+  },
+
+  "browserslist": [
+    "last 2 versions", 
+    "not dead",
+    "not ie <= 11"
+  
+  ],
+  
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jjjenya/marafon.git"
+  },
+  "author": "=)",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/jjjenya/marafon/issues"
+  },
+  "homepage": "https://jjjenya.github.io/marafon#readme"
+}
