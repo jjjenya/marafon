@@ -31,8 +31,8 @@
   --basic-white: #FFFFFF; }
 
 .page__body {
-  min-width: 1280px;
-  margin: 0;
+  width: 1280px;
+  margin: 0 auto;
   padding: 0;
   font-family: "Montserrat";
   font-size: 18px;
@@ -63,7 +63,9 @@
   overflow: hidden; }
 
 .site-list {
-  list-style: none; }
+  list-style: none;
+  margin: 0;
+  padding: 0; }
 
 .button {
   font: inherit;
@@ -97,8 +99,24 @@
   margin: 0px;
   font-weight: normal; }
 
+.company {
+  padding-top: 65px;
+  padding-bottom: 21px; }
+
 .company__title {
-  text-align: center; }
+  text-align: center;
+  margin-bottom: 40px; }
+
+.company__description {
+  display: flex;
+  margin: auto;
+  width: 1036px; }
+
+.description__image {
+  margin-right: 63.46px; }
+
+.description__text:nth-child(1) {
+  margin-bottom: 30px; }
 
 .footer {
   background-color: var(--background-light); }
@@ -176,6 +194,7 @@
 
 .page-header {
   background-image: url("../../img/background-header.jpg");
+  background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
   background-color: var(--background-light); }
@@ -194,7 +213,8 @@
 .portfolio-gallery {
   display: grid;
   grid-template-columns: 5fr 2fr 5fr;
-  grid-column-gap: 20px;
+  -moz-column-gap: 20px;
+       column-gap: 20px;
   grid-row-gap: 30px; }
 
 .portfolio-item {
@@ -277,22 +297,50 @@
 
 .statistic__number {
   font-size: 50px;
-  line-height: 62px; }
+  line-height: 62px;
+  margin: 0; }
 
 .statistic__indicator {
   font-size: 30px;
   line-height: 37px;
   font-weight: 500; }
 
+.team-wapper {
+  background-color: var(--background-darker);
+  padding-top: 50px;
+  padding-bottom: 80px; }
+
 .team {
-  background-color: var(--background-darker); }
+  margin: auto;
+  width: 1036px; }
 
 .team-title {
-  text-align: center; }
+  text-align: center;
+  margin-bottom: 40px; }
+
+.team-list {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  -moz-column-gap: 38px;
+       column-gap: 38px;
+  margin: 0;
+  padding: 0;
+  margin-bottom: 35px; }
+
+.team-list__image {
+  margin: auto;
+  margin-bottom: 10px; }
+
+.team-description {
+  max-width: 320px;
+  text-align: left; }
 
 .work {
   background-color: var(--background-darker);
   text-align: center; }
+
+.work-title {
+  margin-bottom: 40px; }
 
 .work-stage__number {
   color: var(--basic-white); }
