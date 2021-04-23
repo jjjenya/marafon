@@ -4,15 +4,19 @@
 <head>
   <meta charset="UTF-8">
   <title>SCANDI - студия дизайна интерьера</title>
+  <link href="normalize.scss" rel="stylesheet">
   <link rel="stylesheet" href="css/style.css">
 </head>
 
 <body class="page__body">
 
   <header class="page-header">
+
     <a class="page-header__logo">
-      <img class="page-header__logo-image" src="#" width="64.87" height="20" alt="Логотип SCANDI">
+      <img src="img/logo.png" alt="Логотип компании SCANDI - графическое изображение торшера" width="25" height="25">
+      SCANDI
     </a>
+
     <nav class="main-nav">
       <div class="main-nav__wrapper">
         <ul class="main-nav__list site-list">
@@ -54,20 +58,19 @@
         </div>
       </div>
     </nav>
-  </header>
-
-  <main class="page-main">
 
     <h1 class="visually-hidden">SCANDI - студия дизайна интерьера</h1>
 
     <section class="intro">
-      <h2 class="intro__slogan">Поможем сделать<br>вашу квартиру<br>уютнее</h2>
+      <p class="intro__slogan">Поможем сделать<br>вашу квартиру<br>уютнее</p>
       <p class="intro__text">Подбираем текстиль, мебель и аксессуары<br>под ваш интерьер, находим магазины<br>и
         помогаем организовать
         доставку</p>
       <a href="#" class="button intro-button">Оставить заявку</a>
     </section>
+  </header>
 
+  <main class="page-main">
     <section class="company">
       <h2 class="company__title section-title">О нас</h2>
 
@@ -83,41 +86,93 @@
           именно то, что действительно достойно моего дома!»</p>
       </div>
 
-      <div class="company__statistics">
-        <h3 class="visually-hidden">Статистика</h4>
-          <dl class="statistics-list">
-            <dd class="statistics__number">5</dd>
-            <dt class="statistics__indicator">лет опыта</dt>
-            <dd class="statistics__number">100</dd>
-            <dt class="statistics__indicator"> проектов</dt>
-            <dd class="statistics__number">10</dd>
-            <dt class="statistics__indicator"> наград</dt>
-          </dl>
+      <div class="company-statistic statistic">
+        <h3 class="visually-hidden">Статистика</h3>
+        <dl class="statistic-list">
+          <dt class="statistic__indicator">лет опыта</dt>
+          <dd class="statistic__number">5</dd>
+          <dt class="statistic__indicator"> проектов</dt>
+          <dd class="statistic__number">100</dd>
+          <dt class="statistic__indicator"> наград</dt>
+          <dd class="statistic__number">10</dd>
+        </dl>
       </div>
     </section>
 
     <section class="portfolio">
       <h2 class="portfolio-title section-title">Наши работы</h2>
-      <figure сlass="portfolio-gallery">
-        <a href="#">
-          <img src="https://via.placeholder.com/488x451" alt="">
-        </a>
-        <a href="#">
-          <img src="https://via.placeholder.com/692x451" alt="">
-        </a>
-        <a href="#">
-          <img src="https://via.placeholder.com/692x451" alt="">
-        </a>
-        <a href="#">
-          <img src="https://via.placeholder.com/488x451" alt="">
-        </a>
-      </figure>
-      <button class="button portfolio-button" type="button">Смотреть еще</button>
+      <div class="portfolio-gallery">
+        <article class="portfolio-item">
+          <img class="portfolio-img" src="https://via.placeholder.com/488x451"
+            alt="Интерьер спальни: двухместная кровать, ширма" width="488" height="451">
+          <div class="portfolio-hover">
+            <h3 class="portfolio-heading">
+              Квартира-студия <br> 30 кв.м.
+            </h3>
+            <p class="portfolio-text">
+              В квартире были светлые стены и тёплые цвета. Мы сконцентрировались на отсылках к природе и сделали
+              ребятам уютный интерьер, отсылающий к виллам островов Бали.
+            </p>
+          </div>
+        </article>
+        <article class="portfolio-item">
+          <img class="portfolio-img" src="https://via.placeholder.com/692x451"
+            alt="Интерьер кухни: белая барная стойка, четыре деревянных стула перед ней, навесные белые шкафы, деревянная отделка нижних элементов"
+            width="692" height="451">
+          <!-- <div class="portfolio-hover">
+            <h3 class="portfolio-heading">
+              Квартира-студия <br> 30 кв.м.
+            </h3>
+            <p class="portfolio-text">
+              В квартире были светлые стены и тёплые цвета. Мы сконцентрировались на отсылках к природе и сделали
+              ребятам уютный интерьер, отсылающий к виллам островов Бали.
+            </p>
+          </div> -->
+        </article>
+        <article class="portfolio-item">
+          <img class="portfolio-img" src="https://via.placeholder.com/692x451"
+            alt="Интерьер гостинной: зеленый диван с белым круглым столиком на светло-сером ковре, цветы в горшках"
+            width="692" height="451">
+          <!-- <div class="portfolio-hover">
+            <h3 class="portfolio-heading">
+              Квартира-студия <br> 30 кв.м.
+            </h3>
+            <p class="portfolio-text">
+              В квартире были светлые стены и тёплые цвета. Мы сконцентрировались на отсылках к природе и сделали
+              ребятам уютный интерьер, отсылающий к виллам островов Бали.
+            </p>
+          </div> -->
+        </article>
+        <article class="portfolio-item">
+          <img class="portfolio-img" src="https://via.placeholder.com/488x451"
+            alt="Интерьер ванной комнаты: кремовая ванна без ножек с пальмой и светло-серыми стенами" class="works-img"
+            width="488" height="451">
+          <!-- <div class="portfolio-hover">
+            <h3 class="portfolio-heading">
+              Квартира-студия <br> 30 кв.м.
+            </h3>
+            <p class="portfolio-text">
+              В квартире были светлые стены и тёплые цвета. Мы сконцентрировались на отсылках к природе и сделали
+              ребятам уютный интерьер, отсылающий к виллам островов Бали.
+            </p>
+          </div> -->
+        </article>
+      </div>
+
+      <a href="#" class="portfolio-link">Смотреть ещё
+        <svg width="61" height="16" viewBox="0 0 61 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <path
+            d="M60.7071 8.70711C61.0976 8.31658 61.0976 7.68342 60.7071 7.29289L54.3432 0.928932C53.9526 0.538408 53.3195 0.538408 52.9289 0.928932C52.5384 1.31946 52.5384 1.95262 52.9289 2.34315L58.5858 8L52.9289 13.6569C52.5384 14.0474 52.5384 14.6805 52.9289 15.0711C53.3195 15.4616 53.9526 15.4616 54.3432 15.0711L60.7071 8.70711ZM0 9H60V7H0V9Z"
+            fill="#533738">
+          </path>
+        </svg>
+      </a>
+
     </section>
 
     <section class="team">
       <h2 class="team-title section-title">Команда</h2>
-      <ul class="team-list">
+      <ul class="team-list site-list">
         <li class="team-list__item">
           <h3 class="visually-hidden">Маша</h3>
           <img src="https://via.placeholder.com/320x253" alt="">
@@ -142,9 +197,9 @@
       </ul>
     </section>
 
-    <section class="work">
+    <section class="work work-stage">
       <h2 class="work-title section-title">Как мы работаем</h2>
-      <ul class="work-stage_list">
+      <ul class="work-stage__list site-list">
         <li class="work-stage__item">
           <p class="work-stage__number">1</p>
           <p class="work-stage__description">Знакомимся, выезжаем на объект, утверждаем концепцию, подписывем договор.
@@ -188,25 +243,28 @@
       <button type="button">Вперед</button>
     </blockquote>
 
-    <form action="#" method="post" class="request">
-      <h2 class="request-title section-title">Оставить заявку</h2>
-      <p class="request-description">Оставьте свои контакты. Менеджер перезвонит<br>в удобное вам время и ответит на все
-        вопросы.</p>
-      <input type="text" placeholder="Ваше имя" required>
-      <input type="tel" placeholder="Введите телефон" required>
-      <button class="button request-button" type="button">Оставить заявку</button>
-    </form>
+    <div class="form">
+      <form action="#" method="post" class="request">
+        <h2 class="request-title section-title">Оставить заявку</h2>
+        <p class="request__description">Оставьте свои контакты. Менеджер перезвонит<br>в удобное вам время и ответит на
+          все
+          вопросы.</p>
+        <input class="request__name" type="text" placeholder="Ваше имя" required>
+        <input class="request__tel" type="tel" placeholder="Введите телефон" required>
+        <button class="button request-button" type="button">Оставить заявку</button>
+      </form>
 
-    <section class="map">
-      <h2 class="visually-hidden">Карта</h2>
-      <a href="blank.html">Как проехать</a>
-
-    </section>
+      <section class="map">
+        <h2 class="visually-hidden">Карта</h2>
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1998.598942407052!2d30.32089998055985!3d59.938796869136624!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca5ba729%3A0xea9c53d4493c879f!2z0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQuy4sIDE5LCDQodCw0L3QutGCLdCf0LXRgtC10YDQsdGD0YDQsywgMTkxMTg2!5e0!3m2!1sru!2sru!4v1619193068330!5m2!1sru!2sru" 
+        width="590" height="624" style="border:0;" allowfullscreen loading="lazy"></iframe>
+      </section>
+    </div>
 
   </main>
 
   <footer class="footer">
-    <ul class="contacts">
+    <ul class="contacts site-list">
       <li class="contacts__phone">
         <a href="tel:+7818574624">
           +7 (981) 857-46-24
@@ -214,7 +272,7 @@
       </li>
       <li class="contacts__adress">
         <address class="adress">
-          Адреса: г. Санкт-петербург, ул. Большая Конюшенная, 19
+          <span class="visually-hidden">Адрес</span>г. Санкт-петербург, ул. Большая Конюшенная, 19
         </address>
       </li>
       <li class="owner">

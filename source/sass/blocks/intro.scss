@@ -1,0 +1,13 @@
+.intro a {
+  list-style: none;
+  color: var(--fonts);
+}
+
+.intro__slogan {
+  font-size: 50px;
+  line-height: 62px;
+}
+
+.intro-button {
+  background-color: var(--link-request);
+}

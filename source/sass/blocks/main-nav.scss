@@ -1,0 +1,13 @@
+.main-nav {
+  font-size: 16px;
+  line-height: 20px;
+}
+
+.main-nav__list a {
+  color: var(--fonts);
+}
+
+.main-nav__list a:hover,
+.main-nav__list a:focus {
+  background-color: var(--background-light);
+}

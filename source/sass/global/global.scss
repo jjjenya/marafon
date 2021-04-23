@@ -1,0 +1,79 @@
+.page__body {
+  min-width: 1280px;
+  margin: 0;
+  padding: 0;
+  font-family: "Montserrat";
+  font-size: 18px;
+  line-height: 30px;
+  font-weight: 400;
+  color: var(--fonts);
+  text-transform: none;
+  background-color: var(--background-basic);
+}
+
+.page a {
+  text-decoration: none;
+}
+
+.page p {
+  margin: 0px;
+}
+
+.page img {
+  max-width: 100%;
+  height: auto;
+}
+
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+
+.site-list {
+  list-style: none;
+}
+
+.button {
+  font: inherit;
+  text-align: center;
+  vertical-align: middle;
+  text-transform: none;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 24px;
+  // background-color: var(--button);
+  border: none;
+}
+
+.button:hover {
+  background-color: var(--background-dark);
+}
+
+.button:focus {
+  background-color: var(--background-dark);
+  opacity: 0.5;
+}
+
+.button:active {
+  background-color: var(--background-darker);
+}
+
+.button:disabled {
+  cursor: default;
+  opacity: 0.5;
+  background-color: var(--background-light);
+}
+
+.section-title {
+  font-size: 40px;
+  line-height: 50px;
+  text-transform: uppercase;
+  margin: 0px;
+  font-weight: normal;
+}
