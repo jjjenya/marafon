@@ -1,26 +1,35 @@
 {
   "name": "marafon",
-  "version": "1.0.0",
-  "description": "https://www.figma.com/file/2IWe9UdTsEiVnfnAsS8wM3/%D0%9C%D0%B0%D1%80%D0%B0%D1%84%D0%BE%D0%BD-3.0-(Copy)",
-  "dependencies": {
-    "express": "^4.17.1"
-  },
+  "private": true,
+  "description": "marafon - HTML Academy",
   "devDependencies": {
-    "autoprefix": "1.0.1",
-    "browser-sync": "2.26.14",
-    "gulp": "4.0.2",
-    "gulp-less": "4.0.1",
-    "gulp-plumber": "1.2.1",
-    "gulp-postcss": "9.0.0",
-    "gulp-sourcemaps": "3.0.0",
-    "postcss": "8.2.10",
-    "stylelint": "13.12.0"
+    "autoprefixer": "^10.0.2",
+    "browser-sync": "^2.26.13",
+    "del": "^6.0.0",
+    "gh-pages": "^3.1.0",
+    "gulp": "^4.0.2",
+    "gulp-cheerio": "^1.0.0",
+    "gulp-gh-pages": "^0.5.4",
+    "gulp-htmlmin": "^5.0.1",
+    "gulp-imagemin": "^7.1.0",
+    "gulp-plumber": "^1.2.1",
+    "gulp-postcss": "^9.0.0",
+    "gulp-rename": "^2.0.0",
+    "gulp-replace": "^1.0.0",
+    "gulp-sass": "4.1.0",
+    "gulp-sourcemaps": "^3.0.0",
+    "gulp-svgstore": "^7.0.1",
+    "gulp-uglify": "^3.0.2",
+    "gulp-webp": "^4.0.1",
+    "postcss": "^8.1.7",
+    "postcss-csso": "^5.0.0",
+    "stylelint": "^13.7.2"
   },
+  "homepage": "https://jjjenya.github.io/marafon",
   "scripts": {
-    "editorconfig": "editorconfig-cli",
-    "stylelint": "stylelint \"source/less/**/*.less\" --syntax less",
-    "test": "npm run editorconfig && npm run stylelint",
-    "build": "gulp styles",
+    "stylelint": "stylelint \"source/sass/**/*.scss\" --syntax sass",
+    "test": "npm run stylelint",
+    "build": "gulp build",
     "start": "gulp",
     "deploy": "gh-pages -d build"
   },
@@ -35,18 +44,9 @@
     "source/*.html",
     "source/js/**/*.js",
     "source/img/**/*.svg",
-    "source/less/**/*.less"
+    "source/sass/**/*.scss"
   ],
   "engines": {
     "node": "14.15.3"
-  },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/jjjenya/marafon.git"
-  },
-  "license": "ISC",
-  "bugs": {
-    "url": "https://github.com/jjjenya/marafon/issues"
-  },
-  "homepage": "https://jjjenya.github.io/marafon"
+  }
 }
