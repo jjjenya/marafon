@@ -11,14 +11,14 @@
 <body class="page__body">
 
   <header class="page-header">
+    <div class="page-header__wrapper">
+      <a class="page-header__logo">
+        <img src="img/lamp.png" width="25" height="25" alt="Логотип компании SCANDI - графическое изображение торшера">
+        SCANDI
+      </a>
 
-    <a class="page-header__logo">
-      <img src="img/lamp.png" width="25" height="25" alt="Логотип компании SCANDI - графическое изображение торшера">
-      SCANDI
-    </a>
+      <nav class="main-nav">
 
-    <nav class="main-nav">
-      <div class="main-nav__wrapper">
         <ul class="main-nav__list site-list">
           <li class="site-list__item">
             <a href="blank.html">
@@ -51,14 +51,13 @@
             </a>
           </li>
         </ul>
-        <div class="main-nav__list site-list site-contact">
+        <div class="site-list site-contact">
           <a class="site-contact__tel" href="tel:+7818574624">
             +7 (981) 857-46-24
           </a>
         </div>
-      </div>
-    </nav>
-
+      </nav>
+    </div>
     <h1 class="visually-hidden">SCANDI - студия дизайна интерьера</h1>
 
     <section class="intro">
@@ -90,14 +89,26 @@
 
       <div class="company-statistic statistic">
         <h3 class="visually-hidden">Статистика</h3>
-        <dl class="statistic-list">
-          <dt class="statistic__indicator">лет опыта</dt>
-          <dd class="statistic__number">5</dd>
-          <dt class="statistic__indicator"> проектов</dt>
-          <dd class="statistic__number">100</dd>
-          <dt class="statistic__indicator"> наград</dt>
-          <dd class="statistic__number">10</dd>
-        </dl>
+        <ul class="statistic-list statistic-wapper site-list">
+          <li class="statistic-item ">
+            <p class="statistic__indicator">
+              <span class="statistic__number">5</span>
+              лет опыта
+            </p>
+          </li>
+          <li class="statistic-item">
+            <p class="statistic__indicator">
+              <span class="statistic__number">100</span>
+              проектов
+            </p>
+          </li>
+          <li class="statistic-item">
+            <p class="statistic__indicator">
+              <span class="statistic__number">10</span>
+              наград
+            </p>
+          </li>
+        </ul>
       </div>
     </section>
 

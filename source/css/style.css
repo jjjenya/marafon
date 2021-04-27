@@ -110,7 +110,8 @@
 .company__description {
   display: flex;
   margin: auto;
-  width: 1036px; }
+  width: 1036px;
+  margin-bottom: 21px; }
 
 .description__image {
   margin-right: 63.46px; }
@@ -170,26 +171,57 @@
   color: var(--fonts);
   background-color: var(--button); }
 
+.intro {
+  margin-left: 180px;
+  margin-right: 180px;
+  display: block; }
+
 .intro a {
   list-style: none;
   color: var(--fonts); }
 
 .intro__slogan {
   font-size: 50px;
-  line-height: 62px; }
+  line-height: 62px;
+  padding-bottom: 24px; }
+
+.intro__text {
+  margin-bottom: 21px; }
 
 .intro-button {
-  background-color: var(--link-request); }
+  background-color: var(--link-request);
+  padding: 25px 65.88px 24px 67.91px; }
 
 .main-nav {
   font-size: 16px;
-  line-height: 20px; }
+  line-height: 20px;
+  outline: 2px solid #47ff75;
+  outline-offset: -2px;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  flex-basis: auto;
+  flex-grow: 1; }
 
-.main-nav__list a {
+.main-nav__list {
+  outline: 2px solid #ff47ff;
+  outline-offset: -2px;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  flex-basis: auto;
+  flex-grow: 1; }
+
+.main-nav__list a,
+.site-contact a {
   color: var(--fonts); }
 
 .main-nav__list a:hover,
-.main-nav__list a:focus {
+.main-nav__list a:focus,
+.site-contact a:hover,
+.site-contact a:focus {
   background-color: var(--background-light); }
 
 .page-header {
@@ -199,8 +231,22 @@
   background-repeat: no-repeat;
   background-color: var(--background-light); }
 
+.page-header__wrapper {
+  outline: 2px solid red;
+  outline-offset: -2px;
+  display: flex;
+  flex-direction: row; }
+
+.page-header__logo {
+  outline: 2px solid #4a47ff;
+  outline-offset: -2px; }
+
 .page-main {
   background-color: var(--background-light); }
+
+.portfolio {
+  margin-left: 100px;
+  margin-right: 100px; }
 
 .portfolio-gallery {
   margin: 0;
@@ -270,8 +316,7 @@
   color: var(--link-request);
   font-weight: 500;
   font-size: 30px;
-  line-height: 37px;
-  text-align: center; }
+  line-height: 37px; }
 
 .portfolio-link:hover {
   background-color: var(--background-dark); }
@@ -295,15 +340,25 @@
 .statistic-list {
   color: var(--fonts-statistic); }
 
-.statistic__number {
-  font-size: 50px;
-  line-height: 62px;
-  margin: 0; }
+.statistic-wapper {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  padding-top: 75px;
+  padding-bottom: 71px; }
 
 .statistic__indicator {
   font-size: 30px;
   line-height: 37px;
-  font-weight: 500; }
+  font-weight: 500;
+  text-align: center;
+  display: flex;
+  flex-direction: column; }
+
+.statistic__number {
+  font-size: 50px;
+  line-height: 62px;
+  margin: 0; }
 
 .team-wapper {
   background-color: var(--background-darker);

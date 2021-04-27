@@ -6,14 +6,30 @@
   color: var(--fonts-statistic);
 }
 
-.statistic__number {
-  font-size: 50px;
-  line-height: 62px;
-  margin: 0;
+.statistic-wapper {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+
+  padding-top: 75px;
+  padding-bottom: 71px;
 }
 
 .statistic__indicator {
   font-size: 30px;
   line-height: 37px;
   font-weight: 500;
+
+  text-align: center;
+
+  display: flex;
+  flex-direction: column;
+}
+
+
+.statistic__number {
+  font-size: 50px;
+  line-height: 62px;
+  margin: 0;
+
 }

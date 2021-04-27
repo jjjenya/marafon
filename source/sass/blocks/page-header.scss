@@ -4,6 +4,21 @@
   background-size: cover;
   background-repeat: no-repeat;
   background-color: var(--background-light);
+
+
 }
 
+
+.page-header__wrapper {
+  outline: 2px solid red;
+  outline-offset: -2px;
+  display: flex;
+  flex-direction: row;
+}
+
+.page-header__logo {
+  outline: 2px solid rgb(74, 71, 255);
+  outline-offset: -2px;
+
+}
 
