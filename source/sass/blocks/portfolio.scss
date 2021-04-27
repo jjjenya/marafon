@@ -1,24 +1,30 @@
 .portfolio {
   margin-left: 100px;
   margin-right: 100px;
-}
 
-.portfolio-gallery {
-  margin: 0;
-  padding-top: 65px;
+  padding-top: 45px;
+
   padding-bottom: 65px;
-}
-
-.portfolio-title {
-  text-align: left;
 }
 
 .portfolio-gallery {
   display: grid;
   grid-template-columns: 5fr 2fr 5fr;
-  column-gap: 20px;
-  grid-row-gap: 30px;
+  column-gap: 16px;
+  grid-row-gap: 27px;
+
+  margin: 0;
+  padding-bottom: 35px;
 }
+
+
+.portfolio-title {
+  text-align: left;
+
+  margin-bottom: 40px;
+}
+
+
 
 .portfolio-item {
   position: relative;
@@ -75,6 +81,7 @@
   font-size: 30px;
   line-height: 37px;
 
+margin-left: 450px;
 }
 
 .portfolio-link:hover {

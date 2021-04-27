@@ -5,7 +5,8 @@
   background-repeat: no-repeat;
   background-color: var(--background-light);
 
-
+  padding-top: 38px;
+  padding-bottom: 190px;
 }
 
 
@@ -14,11 +15,20 @@
   outline-offset: -2px;
   display: flex;
   flex-direction: row;
+
+  padding-bottom: 86px;
+
+  align-items: center;
+
+  margin-left: 98px;
+  margin-right: 100px;
 }
 
 .page-header__logo {
   outline: 2px solid rgb(74, 71, 255);
   outline-offset: -2px;
-
+  
+  font-size: 16px;
+  line-height: 19.5px;
 }
 
