@@ -1,0 +1,36 @@
+.intro {
+  outline: 2px solid rgb(71, 255, 117);
+  outline-offset: -2px;
+
+  margin-left: auto;
+  margin-right: auto;
+  
+  width: 1035px;
+
+}
+
+.intro a {
+  list-style: none;
+  color: var(--fonts);
+}
+
+.intro__slogan {
+  font-size: 50px;
+  line-height: 62px;
+
+  padding-bottom: 20px;
+}
+
+.intro__text {
+  padding-bottom: 46px;
+
+  font-size: 18px;
+line-height: 30px;
+
+}
+
+.intro-button {
+  background-color: var(--link-request);
+
+  padding: 25px 65.88px 24px 67.91px;
+}

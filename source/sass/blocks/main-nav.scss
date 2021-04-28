@@ -1,0 +1,38 @@
+.main-nav {
+  font-size: 16px;
+  line-height: 20px;
+
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  flex-basis: auto;
+  flex-grow: 1;
+
+  padding-left: 88px;
+}
+
+.main-nav__list {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  flex-basis: auto;
+  flex-grow: 1;
+}
+
+.main-nav__list a,
+.site-contact a {
+  color: var(--fonts);
+}
+
+.main-nav__list a:hover,
+.main-nav__list a:focus,
+.site-contact a:hover,
+.site-contact a:focus {
+  background-color: var(--background-light);
+}
+
+.site-contact {
+  padding-left: 35px;
+}

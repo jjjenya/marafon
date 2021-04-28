@@ -1,0 +1,48 @@
+.work {
+  background-color: var(--background-darker);
+  text-align: center;
+  width: 1220px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.work-title {
+  margin-bottom: 40px;
+  padding-left: 350px;
+  padding-right: 300px;
+}
+
+.work-stage__list {
+  display: flex;
+  flex-direction: row;
+}
+
+.work-stage__item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  flex-basis: 285px;
+  flex-grow: 1;
+}
+
+.work-stage__number {
+  color: var(--basic-white);
+
+  font-weight: 500;
+  font-size: 30px;
+  line-height: 30px;
+
+  width: 70px;
+  height: 70px;
+
+  background: var(--background-dark);
+
+  border-radius: 50%;
+  line-height: 70px;
+  margin: 0;
+}
+
+.work-stage__description {
+  padding-top: 20px;
+}
