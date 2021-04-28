@@ -8,7 +8,8 @@
   font-weight: 400;
   color: var(--fonts);
   text-transform: none;
-  background-color: var(--background-basic);
+  background-color: var(--background-light);
+  padding-bottom: 40px;
 }
 
 .page a {
@@ -20,9 +21,8 @@
 }
 
 .page img {
-  max-width: 100%;
+  width: 100%;
   height: auto;
-  
 }
 
 .visually-hidden {
@@ -50,7 +50,6 @@
   font-weight: 500;
   font-size: 20px;
   line-height: 24.38px;
-  // background-color: var(--button);
   border: none;
 }
 

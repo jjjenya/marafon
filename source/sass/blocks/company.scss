@@ -10,8 +10,6 @@
 
 .company__description {
   display: flex;
-  // flex-direction: row;
-  // justify-content: space-around;
 
   margin: auto;
   width: 1036px;
@@ -20,14 +18,9 @@
 
 .description__image {
   margin-right: 63.46px;
+  
 }
 
 .description__text:nth-child(1) {
   margin-bottom: 30px;
 }
-
-// .company-description__text-wapper {
-//   display: flex;
-//   flex-flow: column;
-// }
-

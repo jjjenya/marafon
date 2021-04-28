@@ -2,9 +2,6 @@
   font-size: 16px;
   line-height: 20px;
 
-  outline: 2px solid rgb(71, 255, 117);
-  outline-offset: -2px;
-
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
@@ -16,17 +13,12 @@
 }
 
 .main-nav__list {
-  outline: 2px solid rgb(255, 71, 255);
-  outline-offset: -2px;
-
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
   justify-content: space-between;
   flex-basis: auto;
   flex-grow: 1;
-
-  // align-items: center;
 }
 
 .main-nav__list a,
@@ -40,7 +32,6 @@
 .site-contact a:focus {
   background-color: var(--background-light);
 }
-
 
 .site-contact {
   padding-left: 35px;
