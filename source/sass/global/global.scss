@@ -42,7 +42,8 @@
   padding: 0;
 }
 
-.button {
+.button,
+.link {
   font: inherit;
   text-align: center;
   vertical-align: middle;
@@ -53,20 +54,24 @@
   border: none;
 }
 
-.button:hover {
+.button:hover,
+.link:hover {
   background-color: var(--background-dark);
 }
 
-.button:focus {
+.button:focus,
+.link:focus {
   background-color: var(--background-dark);
   opacity: 0.5;
 }
 
-.button:active {
+.button:active,
+.link:active {
   background-color: var(--background-darker);
 }
 
-.button:disabled {
+.button:disabled,
+.link:disabled {
   cursor: default;
   opacity: 0.5;
   background-color: var(--background-light);

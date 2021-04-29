@@ -27,10 +27,24 @@
 }
 
 .main-nav__list a:hover,
+.site-contact a:hover {
+  outline: 2px solid #533738;
+  outline-offset: -2px;
+
+  color: var(-background-darker);
+  opacity: 0.5;
+}
+
 .main-nav__list a:focus,
-.site-contact a:hover,
 .site-contact a:focus {
-  background-color: var(--background-light);
+  color: var(-background-dark);
+  opacity: 0.7;
+}
+
+.main-nav__list a:active,
+.site-contact a:active {
+  color: var(--background-dark);
+  opacity: 0.4;
 }
 
 .site-contact {
