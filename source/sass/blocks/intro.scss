@@ -1,12 +1,8 @@
 .intro {
-  outline: 2px solid rgb(71, 255, 117);
-  outline-offset: -2px;
-
   margin-left: auto;
   margin-right: auto;
-  
-  width: 1035px;
 
+  width: 1035px;
 }
 
 .intro a {
@@ -25,12 +21,10 @@
   padding-bottom: 46px;
 
   font-size: 18px;
-line-height: 30px;
-
+  line-height: 30px;
 }
 
-.intro-button {
+.intro-link {
   background-color: var(--link-request);
-
   padding: 25px 65.88px 24px 67.91px;
 }

@@ -86,14 +86,14 @@
 }
 
 .portfolio-link:hover {
-  background-color: var(--background-dark);
+  color: var(--background-dark);
 }
 
 .portfolio-link:focus {
-  background-color: var(--background-dark);
+  color: var(--background-darker);
   opacity: 0.5;
 }
 
 .portfolio-link:active {
-  background-color: var(--background-darker);
+  color: var(--fonts);
 }

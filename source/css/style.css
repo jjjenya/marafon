@@ -1,3 +1,4 @@
+@charset "UTF-8";
 /* montserrat-regular - latin_cyrillic */
 @font-face {
   font-family: 'Montserrat';
@@ -68,7 +69,8 @@
   margin: 0;
   padding: 0; }
 
-.button {
+.button,
+.link {
   font: inherit;
   text-align: center;
   vertical-align: middle;
@@ -78,17 +80,21 @@
   line-height: 24.38px;
   border: none; }
 
-.button:hover {
+.button:hover,
+.link:hover {
   background-color: var(--background-dark); }
 
-.button:focus {
+.button:focus,
+.link:focus {
   background-color: var(--background-dark);
   opacity: 0.5; }
 
-.button:active {
+.button:active,
+.link:active {
   background-color: var(--background-darker); }
 
-.button:disabled {
+.button:disabled,
+.link:disabled {
   cursor: default;
   opacity: 0.5;
   background-color: var(--background-light); }
@@ -169,27 +175,29 @@
   color: var(--basic-white);
   opacity: 0.6; }
 
-.request__description,
-.request__tel {
+.request__description {
   padding-bottom: 44px; }
 
 .request__name {
-  padding-bottom: 39px; }
+  border-bottom: 1px solid #FFFFFF;
+  transform: rotate(0.11deg);
+  margin-bottom: 33px;
+  padding-bottom: 6px; }
+
+.request__tel {
+  border-bottom: 1px solid #FFFFFF;
+  transform: rotate(0.11deg);
+  margin-bottom: 35px;
+  padding-bottom: 5px; }
 
 .request__name::-moz-placeholder, .request__tel::-moz-placeholder {
   color: inherit;
-  font-size: inherit;
-  line-height: 41px;
-  border-bottom: 1px solid #FFFFFF;
-  transform: rotate(0.11deg); }
+  font-size: inherit; }
 
 .request__name::placeholder,
 .request__tel::placeholder {
   color: inherit;
-  font-size: inherit;
-  line-height: 41px;
-  border-bottom: 1px solid #FFFFFF;
-  transform: rotate(0.11deg); }
+  font-size: inherit; }
 
 .request__name:hover,
 .request__tel:hover {
@@ -208,12 +216,13 @@
   margin-right: 200px;
   padding: 22px 38px 22px 38px; }
 
+.request-button:hover {
+  background-color: var(--background-light); }
+
 .map {
   display: block; }
 
 .intro {
-  outline: 2px solid #47ff75;
-  outline-offset: -2px;
   margin-left: auto;
   margin-right: auto;
   width: 1035px; }
@@ -232,7 +241,7 @@
   font-size: 18px;
   line-height: 30px; }
 
-.intro-button {
+.intro-link {
   background-color: var(--link-request);
   padding: 25px 65.88px 24px 67.91px; }
 
@@ -260,10 +269,21 @@
   color: var(--fonts); }
 
 .main-nav__list a:hover,
+.site-contact a:hover {
+  outline: 2px solid #533738;
+  outline-offset: -2px;
+  color: var(-background-darker);
+  opacity: 0.5; }
+
 .main-nav__list a:focus,
-.site-contact a:hover,
 .site-contact a:focus {
-  background-color: var(--background-light); }
+  color: var(-background-dark);
+  opacity: 0.7; }
+
+.main-nav__list a:active,
+.site-contact a:active {
+  color: var(--background-dark);
+  opacity: 0.4; }
 
 .site-contact {
   padding-left: 35px; }
@@ -276,6 +296,10 @@
   background-color: var(--background-light);
   padding-top: 38px;
   padding-bottom: 190px; }
+  @media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 2dppx) {
+    .page-header {
+      background-image: url("../../img/background-header@2x.jpg");
+      background-size: 1400px auto; } }
 
 .page-header__wrapper {
   display: flex;
@@ -287,8 +311,6 @@
   width: 1200px; }
 
 .page-header__logo {
-  outline: 2px solid #4a47ff;
-  outline-offset: -2px;
   font-size: 16px;
   line-height: 19.5px;
   display: flex; }
@@ -373,14 +395,14 @@
   margin-left: 452px; }
 
 .portfolio-link:hover {
-  background-color: var(--background-dark); }
+  color: var(--background-dark); }
 
 .portfolio-link:focus {
-  background-color: var(--background-dark);
+  color: var(--background-darker);
   opacity: 0.5; }
 
 .portfolio-link:active {
-  background-color: var(--background-darker); }
+  color: var(--fonts); }
 
 .reviews-wapper {
   position: relative;
@@ -442,6 +464,20 @@
   background: var(--background-darker);
   border-radius: 50%; }
 
+.button-back:hover,
+.button-next:hover {
+  background: var(--background-dark); }
+
+.button-back:focus,
+.button-next:focus {
+  outline-color: var(--background-dark);
+  background: var(--background-darker); }
+
+.button-back:active,
+.button-next:active {
+  background: var(--background-dark);
+  opacity: 0.5; }
+
 .statistic {
   background-color: var(--background-dark); }
 
@@ -483,7 +519,9 @@
 
 .team-title {
   text-align: center;
-  margin-bottom: 40px; }
+  margin-bottom: 40px;
+  outline: 5px solid tomato;
+  outline-offset: -5px; }
 
 .team-list {
   display: grid;

@@ -61,9 +61,7 @@
   height: 70px;
 
   background: var(--background-darker);
-
   border-radius: 50%;
-
   transform: rotate(180deg);
 }
 
@@ -73,6 +71,22 @@
   height: 70px;
 
   background: var(--background-darker);
-
   border-radius: 50%;
+}
+
+.button-back:hover,
+.button-next:hover {
+  background: var(--background-dark);
+}
+
+.button-back:focus,
+.button-next:focus {
+  outline-color: var(--background-dark);
+  background: var(--background-darker);
+}
+
+.button-back:active,
+.button-next:active {
+  background: var(--background-dark);
+  opacity: 0.5;
 }

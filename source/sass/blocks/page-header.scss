@@ -7,6 +7,11 @@
 
   padding-top: 38px;
   padding-bottom: 190px;
+
+  @media (min-resolution: 2dppx) {
+    background-image: url("../../img/background-header@2x.jpg");
+    background-size: 1400px auto;
+  }
 }
 
 
@@ -25,9 +30,6 @@
 }
 
 .page-header__logo {
-  outline: 2px solid rgb(74, 71, 255);
-  outline-offset: -2px;
-  
   font-size: 16px;
   line-height: 19.5px;
 

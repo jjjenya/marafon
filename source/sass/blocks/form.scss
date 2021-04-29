@@ -37,13 +37,24 @@
   opacity: 0.6;
 }
 
-.request__description,
-.request__tel {
+.request__description {
   padding-bottom: 44px;
 }
 
 .request__name {
-  padding-bottom: 39px;
+  border-bottom: 1px solid #FFFFFF;
+  transform: rotate(0.11deg);
+
+  margin-bottom: 33px;
+  padding-bottom: 6px;
+}
+
+.request__tel {
+  border-bottom: 1px solid #FFFFFF;
+  transform: rotate(0.11deg);
+
+  margin-bottom: 35px;
+  padding-bottom: 5px;
 }
 
 
@@ -51,10 +62,6 @@
 .request__tel::placeholder {
   color: inherit;
   font-size: inherit;
-  line-height: 41px;
-
-  border-bottom: 1px solid #FFFFFF;
-  transform: rotate(0.11deg);
 }
 
 .request__name:hover,
@@ -75,6 +82,10 @@
   background-color: var(--button);
   margin-right: 200px;
   padding: 22px 38px 22px 38px;
+}
+
+.request-button:hover {
+  background-color: var(--background-light);;
 }
 
 .map {
