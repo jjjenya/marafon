@@ -4,7 +4,7 @@
   font-family: 'Montserrat';
   font-style: normal;
   font-weight: 400;
-  src: local("Montserrat"), url("../../fonts/montserrat-v15-latin_cyrillic-regular.woff2") format("woff2"), url("../../fonts/montserrat-v15-latin_cyrillic-regular.woff") format("woff");
+  src: local("Montserrat"), url("../fonts/montserrat-v15-latin_cyrillic-regular.woff2") format("woff2"), url("../fonts/montserrat-v15-latin_cyrillic-regular.woff") format("woff");
   /* Modern Browsers */
   font-display: swap; }
 
@@ -13,7 +13,7 @@
   font-family: 'Montserrat';
   font-style: normal;
   font-weight: 500;
-  src: local("Montserrat"), url("../../fonts/montserrat-v15-latin_cyrillic-500.woff2") format("woff2"), url("../../fonts/montserrat-v15-latin_cyrillic-500.woff") format("woff");
+  src: local("Montserrat"), url("../fonts/montserrat-v15-latin_cyrillic-500.woff2") format("woff2"), url("../fonts/montserrat-v15-latin_cyrillic-500.woff") format("woff");
   /* Modern Browsers */
   font-display: swap; }
 
@@ -289,7 +289,7 @@
   padding-left: 35px; }
 
 .page-header {
-  background-image: url("../../img/background-header.jpg");
+  background-image: url("../img/background-header.jpg");
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
@@ -298,7 +298,7 @@
   padding-bottom: 190px; }
   @media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 2dppx) {
     .page-header {
-      background-image: url("../../img/background-header@2x.jpg");
+      background-image: url("../img/background-header@2x.jpg");
       background-size: 1400px auto; } }
 
 .page-header__wrapper {
