@@ -1,5 +1,5 @@
 .page-header {
-  background-image: url("../../img/background-header.jpg");
+  background-image: url("../img/background-header.jpg");
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
@@ -9,7 +9,7 @@
   padding-bottom: 190px;
 
   @media (min-resolution: 2dppx) {
-    background-image: url("../../img/background-header@2x.jpg");
+    background-image: url("../img/background-header@2x.jpg");
     background-size: 1400px auto;
   }
 }
