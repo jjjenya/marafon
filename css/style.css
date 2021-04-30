@@ -289,7 +289,7 @@
   padding-left: 35px; }
 
 .page-header {
-  background-image: url("../../img/background-header.jpg");
+  background-image: url("../img/background-header.jpg");
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
@@ -298,7 +298,7 @@
   padding-bottom: 190px; }
   @media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 2dppx) {
     .page-header {
-      background-image: url("../../img/background-header@2x.jpg");
+      background-image: url("../img/background-header@2x.jpg");
       background-size: 1400px auto; } }
 
 .page-header__wrapper {
