@@ -6,7 +6,8 @@
    * БЭМ
    * SCSS
    * sprite
-   * Gulp
+   * animation
+   * gulp
 
 
 
