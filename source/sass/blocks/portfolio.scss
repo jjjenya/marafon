@@ -97,3 +97,19 @@
 .portfolio-link:active {
   color: var(--fonts);
 }
+
+.portfolio-link__animation {
+  animation-name: watch-more;
+  animation-duration: 3s;
+  animation-iteration-count: infinite;
+}
+
+@keyframes watch-more {
+  0% {
+    right: 0;
+  }
+  100% {
+    right: 50%;
+    transform: translateX(10%);
+  }
+}
