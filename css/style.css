@@ -210,7 +210,8 @@
 .form {
   background-color: var(--background-dark);
   width: 1330px;
-  margin-left: 70px;
+  margin-left: auto;
+  margin-right: auto;
   display: flex; }
 
 .request {
