@@ -25,7 +25,7 @@
     "postcss-csso": "^5.0.0",
     "stylelint": "^13.7.2"
   },
-  "homepage": "https://jjjenya.github.io/marafon",
+  "homepage": "https://jjjenya.github.io/marafon/",
   "scripts": {
     "stylelint": "stylelint \"source/sass/**/*.scss\" --syntax sass",
     "test": "npm run stylelint",

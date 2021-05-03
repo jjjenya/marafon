@@ -74,10 +74,12 @@
 
       <div class="company__description description">
         <h3 class="visually-hidden">Описание</h3>
-        <img class="description__image" type="image/webp" src="img/image-company.jpg"
-          srcset="img/image-company@2x.jpg 2x" srcset="img/image-company.webp 1x, img/image-company@2x.webp 2x"
-          width="444.54" height="456"
-          alt="крупный план сервированного стола с овальной вазой с сухоцветами в центре кадра: белая скатерть, четыре матовых бокала, белые тарелки и приборы золотистых оттенков">
+        <picture>
+          <source type="image/webp" srcset="img/image-company.webp 1x, img/image-company@2x.webp 2x">
+          <img class="description__image" src="img/image-company.jpg" srcset="img/image-company@2x.jpg 2x"
+            width="444.54" height="456"
+            alt="крупный план сервированного стола с овальной вазой с сухоцветами в центре кадра: белая скатерть, четыре матовых бокала, белые тарелки и приборы золотистых оттенков">
+        </picture>
         <div class="description__text-wapper">
           <p class="description__text">Премиальный европейский текстиль&nbsp;&mdash; одно из&nbsp;самых главных
             направлений
@@ -156,16 +158,16 @@
             <img class="portfolio-img" src="img/portfolio-room.jpg" srcset="img/portfolio-room@2x.jpg 2x" width="692"
               height="451"
               alt="Интерьер гостиной: зеленый диван с белым круглым столиком на светло-сером ковре, цветы в горшках">
-            <picture>
-              <div class="portfolio-hover">
-                <h3 class="portfolio-heading">
-                  Квартира-студия <br> 30 кв.м.
-                </h3>
-                <p class="portfolio-text">
-                  В квартире были светлые стены и тёплые цвета. Мы сконцентрировались на отсылках к природе и сделали
-                  ребятам уютный интерьер, отсылающий к виллам островов Бали.
-                </p>
-              </div>
+          </picture>
+          <div class="portfolio-hover">
+            <h3 class="portfolio-heading">
+              Квартира-студия <br> 30 кв.м.
+            </h3>
+            <p class="portfolio-text">
+              В квартире были светлые стены и тёплые цвета. Мы сконцентрировались на отсылках к природе и сделали
+              ребятам уютный интерьер, отсылающий к виллам островов Бали.
+            </p>
+          </div>
         </article>
         <article class="portfolio-item">
           <picture>
@@ -347,6 +349,13 @@
       </li>
     </ul>
   </footer>
+
+  <a href="#" class="scroll-up-link scroll-up-link-showed">
+    <span class="visually-hidden">Вернуться в начало</span>
+  </a>
+
+  <script src="js/script.min.js">
+  </script>
 
 </body>
 
